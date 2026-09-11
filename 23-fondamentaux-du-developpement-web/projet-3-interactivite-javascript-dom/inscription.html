@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Inscription Arbre aux Palabres</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="formulaireInscription">
+                Formulaire d'inscription aux ateliers
+            </h1>
+        </header>
+        
+        <main>
+            <div class="conteneurInscription">
+                <form id="formulaire" class="formulaire">
+                    <label for="formulairePrenom">Prénom</label>
+                    <input type="text" id="formulaireChampPrenom" class="formulaireChamp" placeholder="Écrivez ici..">
+                    <small class="erreurChamp" id="erreurPrenom"></small>
+                    
+                    <label for="formulaireNom">Nom</label>
+                    <input type="text" id="formulaireChampNom" class="formulaireChamp" placeholder="Écrivez ici..">
+                    <small class="erreurChamp" id="erreurNom"></small>
+                    
+                    <label for="langue">Atelier souhaité</label>
+                    <select name="langue" id="atelierSouhaite" class="menuDeroulant">
+                        <option value="francais" >Français</option>
+                        <option value="anglais" >Anglais</option>
+                        <option value="allemand" >Allemand</option>
+                        <option value="espagnol" >Espagnol</option>
+                    </select>
+
+                    <label for="jourSemaine">Jour de la semaine souhaité</label>
+                    <select name="jourSemaine" id="jourSouhaite" class="menuDeroulant">
+                        <option value="lundi">Lundi</option>
+                        <option value="mardi">Mardi</option>
+                        <option value="mercredi">Mercredi</option>
+                        <option value="jeudi">Jeudi</option>
+                        <option value="vendredi">Vendredi</option>
+                        <option value="samedi">Samedi</option>
+                    </select>
+
+                    <label for="difficulteCours">Niveau du cours souhaité</label>
+                    <select name="difficulteCours" id="niveauSouhaite" class="menuDeroulant">
+                        <option value="debutant">Débutant</option>
+                        <option value="avance">Avancé</option>
+                    </select>
+                </form>
+
+                <div id ="panneauStatut" class="panneauStatut">
+                    <p id="messageStatut">Sélectionnez un atelier et un jour</p>
+                    <div id="zoneValidation" class="zoneValidation"></div>
+                </div>
+
+                <section id="sectionInscriptions" class="sectionInscriptions">
+                    <h2>Liste des personnes inscrites</h2>
+                    <ul id="listeParticipants"></ul>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="conteneurFooter">
+                <p>contact@asso.ch</p>
+                <p>30 rue de l'Association, 1000 Bruxelles, Belgique</p>
+                <p>© 2026 L'Arbre aux Palabres — Tous droits réservés</p>
+            </div>
+        </footer>
+
+        <script src="scriptInscription.js"></script>
+
+    </body>
+</html>

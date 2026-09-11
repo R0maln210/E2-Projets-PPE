@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Horaires</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="ateliersLangueH1">
+                Horaires de la semaine : 
+            </h1>
+        </header>
+        
+        <main class="mainHoraire">
+            
+            <label for="jour">Jour de la semaine</label>
+            <select name="jour" id="jour" class="menuDeroulant">
+                <option value="lundi" selected>Lundi</option>
+                <option value="mardi">Mardi</option>
+                <option value="mercredi">Mercredi</option>
+                <option value="jeudi">Jeudi</option>
+                <option value="vendredi">Vendredi</option>
+                <option value="samedi">Samedi</option>
+            </select>
+
+            <div id="lundi" class="contenuMenuDeroulant">
+                <h3>Lundi</h3>
+                <p>17h-19h : Atelier Français (Débutant)</p>
+                <p>18h-20h : Atelier Anglais (Débutant)</p>
+            </div>
+            <div id="mardi" class="contenuMenuDeroulant">
+                <h3>Mardi</h3>
+                <p>17h-19h : Atelier Allemand (Débutant)</p>
+                <p>18h-20h : Atelier Espagnol (Débutant)</p>
+            </div>
+            <div id="mercredi" class="contenuMenuDeroulant">
+                <h3>Mercredi</h3>
+                <p>12h15-14h15h : Atelier Français (Avancé)</p>
+                <p>14h30-16h30 : Atelier Anglais (Avancé)</p>
+                <p>16h45-18h45 : Atelier Allemand (Avancé)</p>
+                <p>19h-21h : Atelier Espagnol (Avancé)</p>
+            </div>
+            <div id="jeudi" class="contenuMenuDeroulant">
+                <h3>Jeudi</h3>
+                <p>17h-19h : Atelier Allemand (Débutant)</p>
+                <p>18h-20h : Atelier Espagnol (Débutant)</p>
+            </div>
+            <div id="vendredi" class="contenuMenuDeroulant">
+                <h3>Vendredi</h3>
+                <p>17h-19h : Atelier Français (Débutant)</p>
+                <p>18h-20h : Atelier Anglais (Débutant)</p>
+            </div>
+            <div id="samedi" class="contenuMenuDeroulant">
+                <h3>Samedi</h3>
+                <p>9h-11h : Atelier Français (Avancé)</p>
+                <p>11h15-13h15 : Atelier Anglais (Avancé)</p>
+                <p>14h-16h : Atelier Allemand (Avancé)</p>
+                <p>16h15-18h15 : Atelier Espagnol (Avancé)</p>
+            </div>
+
+            <a class="boutonAutrePageHoraire" href="inscription.html">Inscrivez vous</a>
+        </main>
+
+        <footer>
+            <div class="conteneurFooter">
+                <p>contact@asso.ch</p>
+                <p>30 rue de l'Association, 1000 Bruxelles, Belgique</p>
+                <p>© 2026 L'Arbre aux Palabres — Tous droits réservés</p>
+            </div>
+        </footer>
+
+        <script src="scriptHoraires.js"></script>
+    </body>
+</html>
